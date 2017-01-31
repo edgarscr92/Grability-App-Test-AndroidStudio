@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid_app_image"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:text="main_app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_app_title"
+        android:gravity="top|right"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="viewStart"
+        android:visibility="gone" />
+    <TextView
+        android:text="0.00000USD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_app_price"
+        android:textAlignment="center"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

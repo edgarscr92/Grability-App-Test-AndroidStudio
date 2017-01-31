@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.grability.app.MainActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v4.view.PagerTitleStrip
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            style="@style/viewPagerTitleStrip"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:textColor="#fff"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:id="@+id/pagerTitle"
+            />
+
+    </android.support.v4.view.ViewPager>
+    <TextView
+        android:text="Sin conexión."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internetAdvice"
+        android:layout_gravity="bottom|right"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp" />
+</android.support.design.widget.CoordinatorLayout>

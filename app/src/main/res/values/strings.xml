@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="cargando_informacion">Cargando Información.</string>
+
+    <string name="title_activity_loading_data">Cargando Datos</string>
+    <string name="title_activity_main">Aplicaciones</string>
+    <string name="alert_message">No hemos podido actualizar tu tienda.\n<b>Necesitas conexión a Internet.</b></string>
+</resources>

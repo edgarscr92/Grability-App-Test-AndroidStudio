@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:minHeight="?attr/listPreferredItemHeight"
+android:orientation="vertical"
+android:paddingBottom="8dp"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="8dp">
+
+<ImageView
+    android:id="@+id/grid_app_image"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_centerVertical="true"
+    android:foregroundGravity="center_vertical|center_horizontal|center" />
+
+<TextView
+    android:id="@+id/main_app_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/grid_app_image"
+    android:layout_marginLeft="15dp"
+    android:text="title"
+    android:textAppearance="?attr/textAppearanceListItem"
+    tools:text="title"/>
+
+<!--TextView
+    android:id="@+id/main_app_desc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/main_app_title"
+    android:layout_below="@+id/main_app_title"
+    android:text="desc"
+    tools:text="desc" /-->
+
+<TextView
+    android:id="@+id/main_app_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/main_app_title"
+    android:layout_below="@+id/main_app_title"
+    android:text="price"
+    tools:text="price"/>
+</RelativeLayout>
