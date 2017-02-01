@@ -2,6 +2,7 @@ package com.grability.app;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -23,6 +24,12 @@ public class Categories extends Activity {
         this.setFinishOnTouchOutside(false);
 
         setContentView(R.layout.activity_categories);
+
+        if (getResources().getBoolean(R.bool.isTablet)) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
 
         final List<String> list = MainActivity.getCategories();
         final ListView listview = (ListView) findViewById(R.id.categoryView);
